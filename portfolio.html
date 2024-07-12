@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo.H.Dias</title>
+    <link rel="stylesheet" href="/styles/style.css"> <!-- Ao postar no GitHub Pages retirar / do início do caminho para funcionar -->
+</head>
+<body>
+
+    <header>
+
+        <div class="navegacao">
+            <nav>
+                <ul class="barra_lateral">
+
+                    <li onclick=esconde_menu_lateral()><a href="#" class="icone-menu"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="biografia.html">BIOGRAFIA</a></li>
+                    <li><a href="portfolio.html">PORTFÓLIO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+                <ul>
+                    <li><img src="/assets/logo/logo_portfolio_P.png" alt="logo"></li>
+                    <li class="esconde_em_mobile"><a href="index.html">HOME</a></li>
+                    <li class="esconde_em_mobile"><a href="biografia.html">BIOGRAFIA</a></li>
+                    <li class="esconde_em_mobile"><a href="portfolio.html">PORTFÓLIO</a></li>
+                    <li class="esconde_em_mobile"><a href="contato.html">CONTATO</a></li>
+
+                    <li class="botao-menu" onclick=mostra_menu_lateral()><a href="#" class="icone-menu"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    
+                </ul>
+            </nav>
+
+            <script>
+                function mostra_menu_lateral() {
+                    const barra_lateral = document.querySelector('.barra_lateral')
+                    barra_lateral.style.display = 'flex'
+                }
+                function esconde_menu_lateral() {
+                    const barra_lateral = document.querySelector('.barra_lateral')
+                    barra_lateral.style.display = 'none'
+                }
+            </script>
+        </div>
+
+    </header>
+
+</body>
+</html>

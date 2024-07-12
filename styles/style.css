@@ -1,0 +1,127 @@
+/* FONTES */
+
+@font-face {
+    font-family: fonte_navegacao;
+    src: url(/assets/fonts/roboto/Roboto-Medium.ttf) format('truetype');
+}
+
+/* limpa navegador */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* corpo total da tela */
+body {
+    min-height: 100vh;
+    background-color: rgb(201, 201, 201);
+}
+
+/* ANIMAÇÃO */
+
+@keyframes slideIn {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* --------------------- HEADER --------------------- */
+
+/* header total */
+header {
+    background-color: rgb(217, 217, 217);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* adiciona sombras às caixas de elementos */
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex; /* transforma um elemento em um contêiner flexível. */
+    /* justify-content: flex-end; */ /* os itens são empurrados para o final do contêiner (direita para o eixo principal horizontal). */
+    align-items: center; /* define como os itens flexíveis são alinhados ao longo do eixo transversal (vertical, por padrão). Itens são alinhados ao centro do eixo transversal. */
+}
+
+
+
+nav img {
+    height: 55px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+nav li {
+    height: 60px;
+}
+
+nav a {
+    color: rgb(127, 127, 127);
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: fonte_navegacao;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: rgb(205, 205, 205);
+    /* color: blue; */
+}
+
+/* Classe adicionada para o ícone do menu */
+.icone-menu svg {
+    fill: #000000; /* Defina a cor desejada aqui */
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.barra_lateral {
+
+    animation-name: slideIn;
+    animation-duration: 1s;
+
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.barra_lateral li {
+    width: 100%;
+}
+
+.barra_lateral a {
+    width: 100%;
+}
+
+.botao-menu {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .esconde_em_mobile {
+        display: none;
+    }
+
+    .botao-menu {
+        display: block;
+    }
+}
+
+/* --------------------- HEADER --------------------- */
+
