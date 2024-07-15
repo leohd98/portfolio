@@ -5,6 +5,21 @@
     src: url(/assets/fonts/roboto/Roboto-Medium.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: fonte_principal;
+    src: url(/assets/fonts/DM_Serif_Text/DMSerifText-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: texto_secundario;
+    src: url(/assets/fonts/Lora/Lora-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: destaque_italico;
+    src: url(/assets/fonts/DM_Serif_Text/DMSerifText-Italic.ttf) format('truetype');
+}
+
 /* limpa navegador */
 * {
     margin: 0;
@@ -15,6 +30,8 @@
 body {
     min-height: 100vh;
     background-color: rgb(201, 201, 201);
+    display: flex;
+    flex-direction: column
 }
 
 /* ANIMAÇÃO */
@@ -44,8 +61,6 @@ nav ul {
     /* justify-content: flex-end; */ /* os itens são empurrados para o final do contêiner (direita para o eixo principal horizontal). */
     align-items: center; /* define como os itens flexíveis são alinhados ao longo do eixo transversal (vertical, por padrão). Itens são alinhados ao centro do eixo transversal. */
 }
-
-
 
 nav img {
     height: 55px;
@@ -113,6 +128,43 @@ nav li:first-child {
     display: none;
 }
 
+/* --------------------- HEADER --------------------- */
+
+/* ---------------------- MAIN ---------------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* faz o main ocupar o espaço restante */
+    background-color: rgb(222, 222, 222);
+}
+
+.nome {
+    color: #2e2ecc;
+}
+
+.destaque {
+    font-family: destaque_italico;
+}
+
+main h1 {
+    /* background-color: limegreen; */
+    font-family: fonte_principal;
+    font-size: 40px;
+    padding: 50px 30px 30px 30px;
+}
+
+main p {
+    /* background-color: chocolate; */
+    font-family: texto_secundario;
+    font-size: 30px;
+    padding: 0px 30px 50px 30px;
+}
+
+/* ---------------------- MAIN ---------------------- */
+
+/* ----------------- MEDIA QUERIES ------------------ */
+
 @media(max-width: 800px) {
     .esconde_em_mobile {
         display: none;
@@ -123,5 +175,25 @@ nav li:first-child {
     }
 }
 
-/* --------------------- HEADER --------------------- */
+@media(max-width: 300px) {
+    .barra_lateral {
+        width: 100%;
+    }
 
+    nav a {
+        font-size: 6vw; /* Diminuir tamanho da fonte da navegação */
+    }
+
+    main h1 {
+        font-size: 6vw; /* Diminuir tamanho da fonte do título */
+        padding: 6vw 4vw 4vw 4vw;
+    }
+
+    main p {
+        font-size: 6vw; /* Diminuir tamanho da fonte do parágrafo */
+        padding: 0vw 4vw 6vw 4vw;
+    }
+    
+}
+
+/* ----------------- MEDIA QUERIES ------------------ */
