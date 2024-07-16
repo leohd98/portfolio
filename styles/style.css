@@ -50,7 +50,7 @@ body {
 
 /* header total */
 header {
-    background-color: rgb(217, 217, 217);
+    background-color: rgb(205, 205, 205);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* adiciona sombras às caixas de elementos */
 }
 
@@ -84,7 +84,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(152, 152, 152);
     /* color: blue; */
 }
 
@@ -137,6 +137,9 @@ main {
     flex-direction: column;
     flex: 1; /* faz o main ocupar o espaço restante */
     background-color: rgb(222, 222, 222);
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center; /* Centraliza o texto dentro do main */
 }
 
 .nome {
@@ -150,20 +153,53 @@ main {
 main h1 {
     /* background-color: limegreen; */
     font-family: fonte_principal;
-    font-size: 40px;
-    padding: 50px 30px 30px 30px;
+    font-size: 55px;
+    padding: 150px 350px 30px 350px;
 }
 
 main p {
     /* background-color: chocolate; */
     font-family: texto_secundario;
-    font-size: 30px;
-    padding: 0px 30px 50px 30px;
+    font-size: 35px;
+    padding: 0px 380px 50px 380px;
 }
 
 /* ---------------------- MAIN ---------------------- */
 
 /* ----------------- MEDIA QUERIES ------------------ */
+@media(min-width: 1950px) {
+    /* HOME */
+    main h1 {
+        font-size: 75px;
+        padding: 180px 450px 30px 450px;
+    }
+
+    main p {
+        font-size: 55px;
+        padding: 0px 300px 50px 300px;
+    }
+    /* HOME */
+}
+
+@media(max-width: 1440px) {
+    /* HOME */
+    main h1 {
+        padding: 150px 150px 30px 150px;
+    }
+
+    main p {
+        padding: 0px 80px 50px 80px;
+    }
+    /* HOME */
+}
+
+@media(max-width: 1024px) {
+    /* HOME */
+    main h1 {
+        padding: 100px 80px 30px 80px;
+    }
+    /* HOME */
+}
 
 @media(max-width: 800px) {
     .esconde_em_mobile {
@@ -173,6 +209,29 @@ main p {
     .botao-menu {
         display: block;
     }
+
+    /* HOME */
+    main {
+        display: flex;
+        flex-direction: column;
+        flex: 1; /* faz o main ocupar o espaço restante */
+        background-color: rgb(222, 222, 222);
+        align-items: unset; /* Remove a centralização vertical */
+        justify-content: unset; /* Remove a centralização horizontal */
+        padding: 0; /* Remove o padding */
+        text-align: left; /* Ajusta o alinhamento do texto */
+    }
+
+    main h1 {
+        padding: 50px 30px 30px 30px;
+        font-size: 40px;
+    }
+
+    main p {
+        padding: 0px 30px 50px 30px;
+        font-size: 30px;
+    }
+    /* HOME */
 }
 
 @media(max-width: 300px) {
@@ -180,10 +239,7 @@ main p {
         width: 100%;
     }
 
-    nav a {
-        font-size: 6vw; /* Diminuir tamanho da fonte da navegação */
-    }
-
+    /* HOME */
     main h1 {
         font-size: 6vw; /* Diminuir tamanho da fonte do título */
         padding: 6vw 4vw 4vw 4vw;
@@ -193,7 +249,7 @@ main p {
         font-size: 6vw; /* Diminuir tamanho da fonte do parágrafo */
         padding: 0vw 4vw 6vw 4vw;
     }
-    
+    /* HOME */
 }
 
 /* ----------------- MEDIA QUERIES ------------------ */
