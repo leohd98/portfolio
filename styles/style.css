@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: fonte_navegacao;
-    src: url(assets/fonts/roboto/Roboto-Medium.ttf) format('truetype');
+    src: url(fonts/roboto/Roboto-Medium.ttf) format('truetype');
 }
 
 @font-face {
     font-family: fonte_principal;
-    src: url(assets/fonts/DM_Serif_Text/DMSerifText-Regular.ttf) format('truetype');
+    src: url(fonts/DM_Serif_Text/DMSerifText-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: texto_secundario;
-    src: url(assets/fonts/Lora/Lora-Medium.ttf) format('truetype');
+    src: url(fonts/Lora/Lora-Medium.ttf) format('truetype');
 }
 
 @font-face {
     font-family: destaque_italico;
-    src: url(assets/fonts/DM_Serif_Text/DMSerifText-Italic.ttf) format('truetype');
+    src: url(fonts/DM_Serif_Text/DMSerifText-Italic.ttf) format('truetype');
 }
 
 /* limpa navegador */
