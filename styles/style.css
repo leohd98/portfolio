@@ -90,7 +90,11 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(9, 9, 9);
+    background-color: #FF5858;
+}
+
+nav li:first-child a:hover {
+    background-color: transparent;
 }
 
 /* Classe adicionada para o ícone do menu */
@@ -165,13 +169,13 @@ main h1, p {
 main h1 {
     font-family: fonte_principal;
     font-size: 55px;
-    padding: 150px 350px 30px 350px;
+    padding: 8% 350px 30px 350px;
     color: rgb(200, 200, 200);
 }
 
 main p {
     font-family: texto_secundario;
-    font-size: 35px;
+    font-size: 38px;
     padding: 0px 380px 50px 380px;
     color: rgb(200, 200, 200);
 }
@@ -183,7 +187,7 @@ main p {
     /* HOME */
     main h1 {
         font-size: 75px;
-        padding: 180px 450px 30px 450px;
+        padding: 10% 450px 30px 450px;
     }
 
     main p {
@@ -196,7 +200,7 @@ main p {
 @media(max-width: 1440px) {
     /* HOME */
     main h1 {
-        padding: 150px 150px 30px 150px;
+        padding: 10% 150px 30px 150px;
     }
 
     main p {
@@ -208,7 +212,7 @@ main p {
 @media(max-width: 1024px) {
     /* HOME */
     main h1 {
-        padding: 100px 80px 30px 80px;
+        padding: 8% 80px 30px 80px;
     }
     /* HOME */
 }
@@ -232,7 +236,7 @@ main p {
     }
 
     main h1 {
-        padding: 50px 30px 30px 30px;
+        padding: 8% 30px 30px 30px;
         font-size: 30px;
     }
 
