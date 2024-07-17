@@ -102,6 +102,11 @@ nav li:first-child a:hover {
     fill: rgb(200, 200, 200); /* Defina a cor desejada aqui */
 }
 
+nav li:first-child a {
+    padding: 0;
+    padding-left: 10px;
+}
+
 nav li:first-child {
     margin-right: auto;
 }
