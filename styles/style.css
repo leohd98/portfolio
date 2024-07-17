@@ -223,24 +223,22 @@ main p {
     }
 
     /* HOME */
-    main {
-        display: flex;
-        flex-direction: column;
-        flex: 1; /* faz o main ocupar o espaço restante */
-        align-items: unset; /* Remove a centralização vertical */
-        justify-content: unset; /* Remove a centralização horizontal */
-        padding: 0; /* Remove o padding */
-        text-align: left; /* Ajusta o alinhamento do texto */
+    nav img {
+        height: 40px;
+    }
+
+    nav li {
+        height: 50px;
     }
 
     main h1 {
         padding: 50px 30px 30px 30px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     main p {
         padding: 0px 30px 50px 30px;
-        font-size: 30px;
+        font-size: 20px;
     }
     /* HOME */
 }
@@ -265,7 +263,7 @@ main p {
 
 @media(max-width: 200px) {
     nav li {
-        padding: 0 15px;
+        padding: 0 1vw;
     }
 }
 /* ----------------- MEDIA QUERIES ------------------ */
