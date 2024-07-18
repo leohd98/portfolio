@@ -20,6 +20,16 @@
     src: url(fonts/DM_Serif_Text/DMSerifText-Italic.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: titulo_biografia;
+    src: url(fonts/roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: texto_biografia;
+    src: url(fonts/roboto/Roboto-Medium.ttf) format('truetype');
+}
+
 /* limpa navegador */
 * {
     margin: 0;
@@ -151,9 +161,6 @@ main {
     flex-direction: column;
     flex: 1; /* faz o main ocupar o espaço restante */
     background-color: rgb(30, 30, 30);
-    align-items: center;
-    /* justify-content: center; */
-    text-align: center; /* Centraliza o texto dentro do main */
     height: 100vh;
 }
 
@@ -166,19 +173,21 @@ main {
     color: #FF5858;
 }
 
-main h1, p {
+.home h1, p {
+    align-items: center;
+    text-align: center; /* Centraliza o texto dentro do main */
     animation-name: fadeIn;
     animation-duration: 1.5s;
 }
 
-main h1 {
+.home h1 {
     font-family: fonte_principal;
     font-size: 55px;
-    padding: 8% 350px 30px 350px;
+    padding: 5% 350px 30px 350px;
     color: rgb(200, 200, 200);
 }
 
-main p {
+.home p {
     font-family: texto_secundario;
     font-size: 38px;
     padding: 0px 380px 50px 380px;
@@ -187,15 +196,42 @@ main p {
 
 /* ---------------------- MAIN ---------------------- */
 
+/* -------------------- BIOGRAFIA ------------------- */
+
+.biografia {
+    padding-top: 2%;
+    align-items: center;
+    text-align: center; /* Centraliza o texto dentro do main */
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+.biografia h1 {
+    color: #FF5858;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: titulo_biografia;
+    font-size: 30px;
+}
+
+.biografia p {
+    color: rgb(200, 200, 200);
+    padding-bottom: 15px;
+    font-family: texto_biografia;
+    font-size: 22px;
+}
+
+/* -------------------- BIOGRAFIA ------------------- */
+
 /* ----------------- MEDIA QUERIES ------------------ */
 @media(min-width: 1950px) {
     /* HOME */
-    main h1 {
+    .home h1 {
         font-size: 75px;
         padding: 10% 450px 30px 450px;
     }
 
-    main p {
+    .home p {
         font-size: 55px;
         padding: 0px 300px 50px 300px;
     }
@@ -204,11 +240,11 @@ main p {
 
 @media(max-width: 1440px) {
     /* HOME */
-    main h1 {
+    .home h1 {
         padding: 10% 150px 30px 150px;
     }
 
-    main p {
+    .home p {
         padding: 0px 80px 50px 80px;
     }
     /* HOME */
@@ -216,7 +252,7 @@ main p {
 
 @media(max-width: 1024px) {
     /* HOME */
-    main h1 {
+    .home h1 {
         padding: 8% 80px 30px 80px;
     }
     /* HOME */
@@ -240,16 +276,35 @@ main p {
         height: 50px;
     }
 
-    main h1 {
-        padding: 20% 30px 30px 30px;
+    .home h1 {
+        padding: 10% 30px 30px 30px;
         font-size: 30px;
     }
 
-    main p {
-        padding: 0px 30px 50px 30px;
+    .home p {
+        padding: 0px 30px 10% 30px;
         font-size: 20px;
     }
     /* HOME */
+
+    /* BIOGRAFIA */
+
+    .biografia {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .biografia h1 {
+        font-size: 18px;
+        /* padding-bottom: 10px; */
+    }
+
+    .biografia p {
+        font-size: 15px;
+        /* padding-bottom: 10px; */
+    }
+
+    /* BIOGRAFIA */
 }
 
 @media(max-width: 300px) {
@@ -258,12 +313,12 @@ main p {
     }
 
     /* HOME */
-    main h1 {
+    .home h1 {
         font-size: 6vw; /* Diminuir tamanho da fonte do título */
         padding: 6vw 4vw 4vw 4vw;
     }
 
-    main p {
+    .home p {
         font-size: 6vw; /* Diminuir tamanho da fonte do parágrafo */
         padding: 0vw 4vw 6vw 4vw;
     }
