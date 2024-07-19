@@ -207,11 +207,17 @@ main {
 }
 
 .biografia h1 {
-    color: #FF5858;
+    color: #2e2ecc;
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: titulo_biografia;
     font-size: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.destacado {
+    color: #FF5858;
 }
 
 .biografia p {
@@ -219,6 +225,8 @@ main {
     padding-bottom: 15px;
     font-family: texto_biografia;
     font-size: 22px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 /* -------------------- BIOGRAFIA ------------------- */
@@ -290,7 +298,9 @@ main {
     /* BIOGRAFIA */
 
     .biografia {
-        padding-top: 10%;
+        padding-top: 5%;
+        padding-left: 3%;
+        padding-right: 3%;
         padding-bottom: 10%;
     }
 
