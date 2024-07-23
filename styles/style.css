@@ -231,6 +231,52 @@ main {
 
 /* -------------------- BIOGRAFIA ------------------- */
 
+/* -------------------- PORTFOLIO ------------------- */
+
+.portfolio {
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+.v-stretch {
+    grid-row: span 2;
+}
+
+.h-stretch {
+    grid-column: span 2;
+}
+
+.big-stretch {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.portfolio div {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.portfolio div:hover img {
+    transform: scale(1.1);
+}
+
+/* -------------------- PORTFOLIO ------------------- */
+
 /* ----------------- MEDIA QUERIES ------------------ */
 @media(min-width: 1950px) {
     /* HOME */
@@ -315,6 +361,28 @@ main {
     }
 
     /* BIOGRAFIA */
+
+    /* PORTFOLIO */
+
+    .portfolio {
+        max-width: 510px;
+        grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+    }
+
+    .v-stretch {
+        grid-row: span 1;
+    }
+    
+    .h-stretch {
+        grid-column: span 1;
+    }
+    
+    .big-stretch {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    /* PORTFOLIO */
 }
 
 @media(max-width: 300px) {
