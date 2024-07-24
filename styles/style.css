@@ -277,6 +277,44 @@ main {
 
 /* -------------------- PORTFOLIO ------------------- */
 
+/* --------------------- CONTATO -------------------- */
+
+.contato {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+.contato h1, h2 {
+    align-items: center;
+    text-align: center; /* Centraliza o texto dentro do main */
+}
+
+.contato h1 {
+    font-family: fonte_principal;
+    font-size: 55px;
+    color: #2e2ecc;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contato h2 {
+    font-family: texto_secundario;
+    font-size: 38px;
+    color: rgb(200, 200, 200);
+}
+
+.icones {
+    text-align: center; /* Centraliza o texto dentro do main */
+}
+
+.icones img {
+    height: 50px;
+    width: 50px;
+    padding: 2% 3% 5% 3%;
+}
+
+/* --------------------- CONTATO -------------------- */
+
 /* ----------------- MEDIA QUERIES ------------------ */
 @media(min-width: 1950px) {
     /* HOME */
@@ -383,6 +421,24 @@ main {
     }
 
     /* PORTFOLIO */
+
+    /* CONTATO */
+
+    .contato h1 {
+        font-size: 30px;
+    }
+
+    .contato h2 {
+        font-size: 18px;
+    }
+
+    .icones img {
+        height: 5%;
+        width: 5%;
+        padding: 5% 3% 5% 3%;
+    }
+
+    /* CONTATO */
 }
 
 @media(max-width: 300px) {
